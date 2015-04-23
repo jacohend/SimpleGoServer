@@ -1,0 +1,5 @@
+Sample Go server I wrote while I was learning Golang. 
+
+Compile with "go build server.go". 
+
+Navigate to localhost:8080/example/time for a demonstration of go's time formatting abilities, or to /example/file to serve a file in the same directory as the server. 
