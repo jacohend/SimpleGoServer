@@ -38,8 +38,6 @@ func viewHandler(w http.ResponseWriter, r *http.Request) {
     }
 }
 
-//creates global channel to communicate with global monitor loop and initializes web server
-//monitor loop runs continuously so that it maybe extended with email push alert functionality as well
 func main() {
     http.HandleFunc("/example/", viewHandler)   //viewHandler gets called when someone visits our page
     http.ListenAndServe(":8080", nil)           //starts web server on port 8080
